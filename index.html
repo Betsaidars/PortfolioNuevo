@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En el contenido encontraremos mi portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:ital@1&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Betsaida Rodríguez</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="botones">
+                <button id="aboutMeBtn" data-target="about-me-section">Sobre mí</button>
+                <button id="projectsBtn" data-target="projects-section">Mis proyectos</button>
+
+                <div class="language-selector">
+                    <button id="languageToggle">
+                        <img id="currentFlag" src="./img/Bandera_de_España.png" alt="Bandera actual" class="flag-icon">
+                    </button>
+                    <div class="languageDropdown" id="languageDropdown">
+                        <img src="./img/Bandera_de_España.png" alt="Español" data-lang="es" class="flag-icon">
+                        <img src="./img/Bandera_de_UK.png" alt="English" data-lang="en" class="flag-icon">
+                    </div>
+                </div>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round">
+                            <span class="icon sun">☀️</span> <span class="icon moon">🌙</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+
+        <div class="imagenYSkills">
+            <div class="imagenMia">
+                <img src="./img/Imagen_mia.png" alt="Imagen mia">
+                <h3 class="nombre">Betsaida Rodriguez</h3>
+            </div>
+            <div class="skills">
+                <h3>JAVA</h3>
+                <h3>C#</h3>
+                <h3>Kotlin</h3>
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>MySQL</h3>
+                <h3>SQLite</h3>
+                <h3>javascript</h3>
+                <h3>PostgresSQL</h3>
+                <h3>MAUI</h3>
+                <h3>Docker</h3>
+                <h3>MongoDB</h3>
+                <h3>Spring</h3>
+                <h3>Hibernate</h3>
+                <h3>Node.js</h3>
+            </div>
+        </div>
+    </header>
+
+    <div class="tituloSobreMi">
+        <h2 class="section-title" data-lang-key="aboutMeTitle" id="titleAboutMe">Sobre mí</h2> 
+    </div>
+    <div class="sobreMi" id="about-me-section">
+        <div class="imagenSobreMi">
+            <img src="./img/Imagen_mia.png" alt="Imagen mia">
+        </div>
+        <div class="textoSobreMi">
+            <h3 id="aboutMeContent">
+                Soy una desarrolladora fullstack apasionada con experiencia en la creación de interfaces 
+                de usuario intuitivas y experiencias digitales robustas. Disfruto el proceso de transformar
+                ideas complejas en soluciones funcionales y escalables, utilizando diferentes lenguajes para 
+                llevarlas a cabo. Constantemente busco aprender nuevas tecnologías y enfrento cada desafío de 
+                codificación con entusiasmo y una mentalidad orientada a la resolución de problemas.
+            </h3>
+        </div>
+    </div>
+    
+
+    <section class="proyectos" id="projects-section">
+        <h2 class="section-title" data-lang-key="projectsTitle">Mis Proyectos</h2>
+        <div class="proyectos-grid">
+
+            <div class="proyecto-card">
+                <div class="proyecto-imagen-container">
+                    <img src="./img/MegaTechLogo.png" alt="MegaTech">
+                </div>
+                <div class="proyecto-details">
+                    <h3 class="proyecto-titulo">MegaTech</h3>
+                    <p>Una aplicación creada para la venta de productos electrónicos de manera online</p>
+                    <div class="proyecto-tecnologias">
+                        <span>Kotlin</span>
+                        <span>Spring</span>
+                    </div>
+                     <div class="proyecto-botones">
+                    <a href="https://github.com/Betsaidars/MegaTech/tree/master/app/src/main/java/com/example/megatech" target="_blank" class="btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.205 11.385.6.111.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.609-4.043-1.609-.546-1.387-1.334-1.758-1.334-1.758-1.088-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.303.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.125-.304-.535-1.52.117-3.176 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.399 3.003-.399 1.02 0 2.046.133 3.003.399 2.293-1.553 3.3-1.23 3.3-1.23.653 1.656.243 2.872.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.624-5.475 5.92-.42.36-.81.996-.81 2.008 0 1.455.015 2.63.015 2.983 0 .315.21.69.825.575C20.565 21.797 24 17.301 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-imagen-container">
+                    <img src="./img/project2-preview.png" alt="Preview del Proyecto 2">
+                </div>
+                <div class="proyecto-details">
+                    <h3 class="proyecto-titulo">Prácticas</h3>
+                    <div class="proyecto-tecnologias">
+                        <span>Node.js</span>
+                        <span>Kotlin</span>
+                    </div>
+                     <div class="proyecto-botones"> <a href="https://ejemplo.com/proyecto1" target="_blank" class="btn-visitar-sitio">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6V8H14.5L4 18.5L5.5 20L16 9.5V14H18V6H10Z" />
+                        </svg>
+                        Visitar sitio
+                    </a>
+                    <a href="https://github.com/tu-usuario/proyecto1" target="_blank" class="btn-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.205 11.385.6.111.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.609-4.043-1.609-.546-1.387-1.334-1.758-1.334-1.758-1.088-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.303.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.125-.304-.535-1.52.117-3.176 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.399 3.003-.399 1.02 0 2.046.133 3.003.399 2.293-1.553 3.3-1.23 3.3-1.23.653 1.656.243 2.872.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.624-5.475 5.92-.42.36-.81.996-.81 2.008 0 1.455.015 2.63.015 2.983 0 .315.21.69.825.575C20.565 21.797 24 17.301 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h4>Contacto</h4>
+            <div class="contact-item">
+                <a href="mailto:betsaidaarodriguezz@gmail.com" aria-label="Enviar correo electrónico">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Email</title><path d="M12 12.713l-10.713-7.513h21.426l-10.713 7.513zm-10.713 6.787h21.426v-12.822l-10.713 7.513-10.713-7.513v12.822zm-1.287-14.287v14.574l12 8.426 12-8.426v-14.574c0-.55-.45-1-1-1h-22c-.55 0-1 .45-1 1zm22 1c0-.55-.45-1-1-1h-20c-.55 0-1 .45-1 1v12l11 7.713 11-7.713v-12z"/></svg>
+                    <span>betsaidaarodriguezz@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="./docs/Currículum Vitae Nuevol.pdf" download="Betsaida-Rodriguez-CV.pdf" aria-label="Descargar Currículum Vitae">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Descargar CV</title><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-2 18c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-2-7V4h4v4h-4z"/></svg>
+                    <span>Descargar CV</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/betsaida-rodriguez-suarez-05b96a342/" target="_blank" aria-label="LinkedIn">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.32-.023-3.018-1.84-3.018-1.84 0-2.122 1.442-2.122 2.923v5.664H9.351V9h3.414v1.561h.045c.476-.9 1.636-1.84 3.37-1.84 3.606 0 4.267 2.37 4.267 6.467v6.234zM5.337 7.433a2.062 2.062 0 01-2.062-2.065 2.062 2.062 0 012.062-2.065 2.062 2.062 0 012.062 2.065 2.062 2.062 0 01-2.062 2.065zm-.005 13.019H3.271V9h4.125v11.452zM22.227 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.455c.979 0 1.773-.773 1.773-1.729V1.729C24 .774 23.206 0 22.227 0z"/></svg>
+                </a>
+                <a href="https://github.com/Betsaidars" target="_blank" aria-label="GitHub">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.334-1.758-1.334-1.758-1.088-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.303.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.125-.303-.535-1.52.117-3.176 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.399 3.003-.399 1.02 0 2.046.133 3.003.399 2.293-1.553 3.3-1.23 3.3-1.23.653 1.653.243 2.87 0 3.173.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.002.81 2.02v2.926c0 .32.217.69.825.575C20.565 21.797 24 17.3 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Betsaida Rodríguez. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+
+    <script src="./javascript.js"></script> 
+</body>
+</html>
